@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h2>Blog </h2>
+        <button id="openModal">
+            <i class="fa-solid fa-plus"></i>Add Blog</button>
+    </nav>
+    <section class="hero">
+        <h1>Share Your Ideas With The World</h1>
+        <p>Create beautiful blogs and manage them easily.</p>
+    </section>
+
+    <section class="blogs">
+        <div id="blogContainer"></div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Create New Blog</h2>
+            <input
+                type="text"
+                id="title"
+                placeholder="Blog Title"
+            >
+            <input
+                type="text"
+                id="image"
+                placeholder="Image URL"
+            >
+            <textarea
+                id="description"
+                placeholder="Write your blog..."
+            ></textarea>
+
+            <button id="addBlog">
+                Publish Blog
+            </button>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
