@@ -373,3 +373,17 @@ button:hover {
 .card:hover::before {
   left: 150%;
 }
+.cursor-glow {
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(0,191,255,0.4), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+.card {
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+}
