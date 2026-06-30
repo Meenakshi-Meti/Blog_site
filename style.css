@@ -232,3 +232,144 @@ nav button:hover {
 .read-btn:hover{
     background: blue;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.card {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.hero img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+button:hover {
+  box-shadow: 0 0 15px #00bfff,
+              0 0 30px #00bfff;
+}
+.card {
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card:hover {
+  border-color: #00bfff;
+}
+.logo {
+  transition: transform 0.5s ease;
+}
+
+.logo:hover {
+  transform: rotate(8deg) scale(1.1);
+}
+.social i {
+  transition: all 0.3s ease;
+}
+
+.social i:hover {
+  color: #00bfff;
+  transform: translateY(-6px) scale(1.2);
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-25deg);
+  transition: left 0.8s;
+}
+
+.card:hover::before {
+  left: 150%;
+}
