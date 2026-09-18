@@ -1,14 +1,22 @@
-const express = reuire("express");
+const express = require("express");
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
+
+dotenv.config();
 
 const app = express();
-app.use(express.jspn());
+app.use(express.json());
+
+connectDB();
 
 app.get("/" ,(req,res)=>{
     res.json({
-        message: "Blogging API is running";
+        message: "Blogging API is running"
     });
 });
 
-app.listen(3000 ,()=>{
-    console.log("Server running on port 3000");
-})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, ()=>{
+    console.log(`Server running on port ${PORT}`);
+});
