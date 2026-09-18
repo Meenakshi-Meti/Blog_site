@@ -377,7 +377,7 @@ button:hover {
     position: fixed;
     width: 180px;
     height: 180px;
-    background: radial-gradient(circle, rgba(0,191,255,0.4), transparent 70%);
+    background: radial-gradient(circle, rgba(226, 40, 50, 0.4), transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);

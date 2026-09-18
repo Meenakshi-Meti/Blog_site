@@ -1,5 +1,28 @@
 {
   "dependencies": {
-    "gsap": "^3.15.0"
-  }
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "gsap": "^3.15.0",
+    "mongoose": "^9.10.1"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meenakshi-Meti/Blog_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Meenakshi-Meti/Blog_site/issues"
+  },
+  "homepage": "https://github.com/Meenakshi-Meti/Blog_site#readme"
 }
