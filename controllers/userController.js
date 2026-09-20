@@ -45,7 +45,7 @@ const registerUser = async(req,res)=>{
     }
 };
 
-const loginUser =async(req,res){
+const loginUser =async(req,res)=>{
     try{
         const {email ,password} = req.body;
 
@@ -91,7 +91,7 @@ const loginUser =async(req,res){
     }
 };
 
-const getProfile async(req,res) =>{
+const getProfile = async (req,res) =>{
     try{
         const user = async(req,res)=>{
             const user = await User.findById(req.user.id).select("-password");
