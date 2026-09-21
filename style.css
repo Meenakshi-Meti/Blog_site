@@ -180,9 +180,61 @@ nav button:hover {
     font-size:15px;
 }
 
+#imagePreview {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+#imagePreview {
+    height: 180px;
+    object-fit: cover;
+    padding: 0;
+    display: none;
+    border: none;
+}
+
+#imagePreview.show {
+    display: block;
+}
+
 .modal-content textarea{
     resize:none;
     height:150px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.edit:hover {
+    background: #372fd8;
+}
+
+.blog-id {
+    display: inline-block;
+    background: #f0edff;
+    color: #5a4bd4;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    word-break: break-all;
 }
 
 .modal-content button{

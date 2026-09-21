@@ -35,11 +35,12 @@ const getBlog = async(req,res)=>{
 
 const addBlog = async (req, res) => {
     try {
-        const { blogTitle, blogBody } = req.body;
+        const { title, image, description } = req.body;
 
         const blog = await Blog.create({
-            blogTitle,
-            blogBody
+            title,
+            image,
+            description
         });
 
         res.status(201).json({

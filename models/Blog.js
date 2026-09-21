@@ -1,15 +1,20 @@
 const mongoose = require("mongoose");
 
 const blogSchema = new mongoose.Schema({
-    blogTitle:{
+    title:{
         type:String,
         required:true,
         trim:true
     },
 
-    blogBody:{
+    description:{
         type:String,
         required:true
+    },
+
+    image:{
+        type:String,
+        default:""
     },
 
     author:{
